@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>First Character Not Space</title>
+    <style>
+        /* Add any CSS styles you need here */
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script>
+        function firstChar(str) {
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] !== ' ') {
+                    return str[i];
+                }
+            }
+            return '';
+        }
 
+        // Test cases
+        console.log(firstChar(' Rosa Parks ')); // 'R'
+        console.log(firstChar(' Hello World ')); // 'H'
+        console.log(firstChar(' ')); // ''
+        console.log(firstChar('')); // ''
+    </script>
 </body>
-
 </html>
